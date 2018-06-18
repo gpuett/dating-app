@@ -2,5 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
 
 body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Helvetica Neue', sans-serif;
+  color: #353D38;
+  background: radial-gradient(at bottom, #FBA498,#FAB3A9);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: #FAB3A9;
+  height: 100vh;
 }
