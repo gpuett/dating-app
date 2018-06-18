@@ -1,8 +1,15 @@
 .hero{
   height: 60vh;
   background-color: rgba(0,0,0,.1);
+  background-image: url('./../../assets/couple.png');
+  background-repeat: no-repeat;
+  background-size: 80vh;
+  background-position: bottom right;
   padding: 5vh 5vw 5vh 5vw;
   h1{
+    font-size: calc(100% + 3em);
+  }
+  h2{
     font-size: calc(100% + 2em);
   }
 }
