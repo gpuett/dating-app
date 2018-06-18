@@ -11,5 +11,5 @@ export class SwipeComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  
 }
