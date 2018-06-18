@@ -8,6 +8,7 @@ A dating app with a swiping and matching feature built in Angular 2 and a custom
 ### User stories
 
 ### Setup and installation instructions
+API: https://dating-app-server.herokuapp.com/users
 
 ### Sketches and wireframes
 

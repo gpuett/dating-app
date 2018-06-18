@@ -1,4 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import {User} from '../user';
+import {DataService} from '../data.service';
+import {ActivatedRoute, Params} from '@angular/router';
+import {Location} from '@angular/common';
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-detail',
@@ -7,9 +12,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
-  constructor() { }
+  user: User;
 
-  ngOnInit() {
+  constructor(
+    private dataService: DataService,
+    private route: ActivatedRoute,
+    private location: Location
+  ) { }
+
+  ngOnInit(){
+    console.log(this.dataService.getUsers());
+    // this.route.params
+    // .switchMap((params: Params) => this.dataService.getUser(+params['id']))
+    // .subscribe(user => this.user = user);
   }
+
+  // goBack(): void {
+  //   this.location.back();
+  // }
 
 }

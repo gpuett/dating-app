@@ -1,0 +1,7 @@
+<h3>User List:</h3>
+
+<a *ngFor="let user of users" [routerLink]="['/detail', user.id]">
+  <div>
+    <h5>{{user.id}} - {{user.name}}</h5>
+  </div>
+</a>

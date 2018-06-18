@@ -5,23 +5,29 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { routing } from './app.routing';
 
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SwipeComponent } from './swipe/swipe.component';
 import { DetailComponent } from './detail/detail.component';
+import { UserComponent } from './user/user.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SwipeComponent,
-    DetailComponent
+    DetailComponent,
+    UserComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
