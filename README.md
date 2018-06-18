@@ -20,11 +20,17 @@ A dating app with a swiping and matching feature built in Angular 2 and a custom
   3. To view site on a live development server, run the command `ng serve --open`. This will open the site on a local server and will update whenever changes to the project files are saved.
 
 ### Sketches and wireframes
+#### Web view sketches
   ![Web-view homepage](./src/assets/splash.png)
+
   ![Web-view match browse](./src/assets/swipe.png)
+
   ![Web-view user detail page](./src/assets/user-detail.png)
 
+#### Mobile view sketches
   ![Mobile view splash](./src/assets/mobile-splash.png)
+
   ![Mobile view match browse](./src/assets/mobile-swipe.png)
+
   ![Mobile view user detail](./src/assets/user-detail.png)
 ### License
