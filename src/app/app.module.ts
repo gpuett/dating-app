@@ -11,7 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { SwipeComponent } from './swipe/swipe.component';
 import { DetailComponent } from './detail/detail.component';
 import { UserComponent } from './user/user.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -19,15 +18,14 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     HomeComponent,
     SwipeComponent,
     DetailComponent,
-    UserComponent,
-    UserDetailsComponent
+    UserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     routing,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
