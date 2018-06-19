@@ -14,6 +14,7 @@ A dating app with a swiping and matching feature built in Angular 2 and a custom
 * 'Liking' a user should unblur their picture and allow you to proceed to user detail page.
 
 ### Setup and installation instructions
+API: https://dating-app-server.herokuapp.com/users
 
   1. If Angular is not installed, run `npm install -g @angular/cli@1.6.5`
   2. Navigate to the project root directory and run `npm install`
