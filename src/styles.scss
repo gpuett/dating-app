@@ -29,8 +29,7 @@ a{
   padding: 2vh;
   border-radius: 10px;
 }
-
-@media screen and (max-width: 414px){
+@include media-query(414px) {
   .panel{
     width: 85vw;
   }
