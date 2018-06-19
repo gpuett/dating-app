@@ -9,9 +9,8 @@ import { DataService } from '../data.service';
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent implements OnInit {
-  users: User[];
+  users;
   selectedUser: User;
-
 
   constructor(private dataService: DataService) { }
 
