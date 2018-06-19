@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   providers: [DataService]
 })
 export class SwipeComponent implements OnInit {
-  users: User[];
+  users;
 
   constructor(private dataService: DataService) { }
 

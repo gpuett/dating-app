@@ -1,47 +1,48 @@
-<div class="panel" *ngFor ="let user of users">
-  {{user.imageUrl}}
+<div class="panel" *ngFor="let user of users">
+  <img src="{{user.imageUrl}}" alt="">
   <div class="info">
     <h4>{{user.name}}</h4>
     <h4>{{user.age}}</h4>
   </div>
   <p>{{user.bio}}</p>
-
-<button name="reject" class="reject">
-<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-        <g id="swipe" transform="translate(-342.000000, -447.000000)" stroke="#8D8D8D" stroke-width="10">
-            <g id="x" transform="translate(321.000000, 425.000000)">
-                <path d="M28.2978723,29.5744681 L72.1018309,73.3784266" id="Line"></path>
-                <path d="M28.2978723,29.5744681 L72.1018309,73.3784266" id="Line-Copy" transform="translate(50.212766, 51.489362) scale(1, -1) translate(-50.212766, -51.489362) "></path>
-            </g>
-        </g>
-    </g>
-</svg></button>
-<button name="accept" class="accept">
-<svg width="59px" height="59px" viewBox="0 0 72 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <filter x="-2.1%" y="-2.4%" width="104.9%" height="111.1%" filterUnits="objectBoundingBox" id="filter-1">
-            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feColorMatrix values="0 0 0 0 0.833864796   0 0 0 0 0.254742668   0 0 0 0 0.254742668  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
-            <feMerge>
-                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
-                <feMergeNode in="SourceGraphic"></feMergeNode>
-            </feMerge>
-        </filter>
-    </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="swipe" transform="translate(-1034.000000, -450.000000)" fill="#CD3B24">
-            <g id="heart" transform="translate(1020.000000, 425.000000)">
-                <g filter="url(#filter-1)" transform="translate(14.468085, 25.106383)" id="Shape">
-                    <path d="M64.5503382,4.24806724 C56.8988897,-2.22806803 45.5194544,-1.06319574 38.4963182,6.13405096 L35.7457062,8.94915902 L32.9950943,6.13405096 C25.9859206,-1.06319574 14.5925228,-2.22806803 6.94107422,4.24806724 C-1.82737411,11.6810619 -2.28813652,25.0216232 5.55878699,33.0786566 L32.5762193,60.7859763 C34.3215315,62.5748873 37.1559185,62.5748873 38.9012306,60.7859763 L65.918663,33.0786566 C73.779549,25.0216232 73.3187866,11.6810619 64.5503382,4.24806724 Z" fill-rule="nonzero"></path>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg></button>
+  <button name="reject" class="reject">
+    <svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+      <desc>Created with Sketch.</desc>
+      <defs></defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+          <g id="swipe" transform="translate(-342.000000, -447.000000)" stroke="#8D8D8D" stroke-width="10">
+              <g id="x" transform="translate(321.000000, 425.000000)">
+                  <path d="M28.2978723,29.5744681 L72.1018309,73.3784266" id="Line"></path>
+                  <path d="M28.2978723,29.5744681 L72.1018309,73.3784266" id="Line-Copy" transform="translate(50.212766, 51.489362) scale(1, -1) translate(-50.212766, -51.489362) "></path>
+              </g>
+          </g>
+      </g>
+    </svg>
+  </button>
+  <button name="accept" class="accept">
+    <svg width="59px" height="59px" viewBox="0 0 72 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+      <desc>Created with Sketch.</desc>
+      <defs>
+          <filter x="-2.1%" y="-2.4%" width="104.9%" height="111.1%" filterUnits="objectBoundingBox" id="filter-1">
+              <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+              <feColorMatrix values="0 0 0 0 0.833864796   0 0 0 0 0.254742668   0 0 0 0 0.254742668  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+              <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+          </filter>
+      </defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="swipe" transform="translate(-1034.000000, -450.000000)" fill="#CD3B24">
+              <g id="heart" transform="translate(1020.000000, 425.000000)">
+                  <g filter="url(#filter-1)" transform="translate(14.468085, 25.106383)" id="Shape">
+                      <path d="M64.5503382,4.24806724 C56.8988897,-2.22806803 45.5194544,-1.06319574 38.4963182,6.13405096 L35.7457062,8.94915902 L32.9950943,6.13405096 C25.9859206,-1.06319574 14.5925228,-2.22806803 6.94107422,4.24806724 C-1.82737411,11.6810619 -2.28813652,25.0216232 5.55878699,33.0786566 L32.5762193,60.7859763 C34.3215315,62.5748873 37.1559185,62.5748873 38.9012306,60.7859763 L65.918663,33.0786566 C73.779549,25.0216232 73.3187866,11.6810619 64.5503382,4.24806724 Z" fill-rule="nonzero"></path>
+                  </g>
+              </g>
+          </g>
+      </g>
+    </svg>
+  </button>
 </div>
