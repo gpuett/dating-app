@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  height: 10vh;
   background-color: #F9FBF2;
 }
 h1{
@@ -45,4 +45,19 @@ button:hover{
 .active{
   padding-bottom: 10px;
   border-bottom: 6px #6CD4FF solid;
+}
+
+@media screen and (max-width: 414px){
+  .navigation{
+    justify-content: center;
+    h1{
+      display: none;
+    }
+    button{
+      display: none;
+    }
+  }
+  .credits{
+    display: none;
+  }
 }

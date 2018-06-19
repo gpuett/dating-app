@@ -39,6 +39,10 @@
     font-weight: black;
     grid-template-columns: 1fr;
     margin-top: 1vh;
+    background-position: bottom center;
+    background-size: 140vw;
+    padding: 0;
+    height: 84.5vh;
   }
   h1{
     font-size: 2.5em!important;
@@ -48,6 +52,14 @@
     display: none;
   }
   button{
-    display: run-in;
+    display: block!important;
+    border: 0px;
+    padding: 15px 50px 15px 50px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif!important;
+    font-weight: bold;
+    font-size: calc(100% + .5em);
+    background-color: #6CD4FF;
+    margin: auto;
   }
 }
