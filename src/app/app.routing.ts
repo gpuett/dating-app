@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     component: SwipeComponent
   },
   {
-    path: 'user',
+    path: 'users',
     component: UserComponent
   }
 ];
