@@ -21,7 +21,7 @@ export class DetailComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-    console.log(this.dataService.getUsers());
+    this.dataService.getUsers();
     // this.route.params
     // .switchMap((params: Params) => this.dataService.getUser(+params['id']))
     // .subscribe(user => this.user = user);
