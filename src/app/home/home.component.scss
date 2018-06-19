@@ -1,16 +1,19 @@
 @import '~styles/abstracts/variables';
 @import '~styles/abstracts/mixins';
 .hero{
+  min-height: 565px;
   height: 60vh;
-  padding: 5vh 5vw 5vh 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
-  background: url('./../../assets/couple.png') {
+  background: url('./../../assets/couple.png'){
     color: rgba(0,0,0,.1);
     repeat: no-repeat;
-    size: 50%;
+    width: 30%;
     position: bottom right;
+  }
+  .text{
+    padding-left: 30px;
   }
   h1{
     font-size: calc(100% + 3em);
