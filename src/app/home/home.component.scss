@@ -1,14 +1,17 @@
+@import '~styles/abstracts/variables';
+@import '~styles/abstracts/mixins';
 .hero{
   height: 60vh;
-  background-color: rgba(0,0,0,.1);
-  background-image: url('./../../assets/couple.png');
-  background-repeat: no-repeat;
-  background-size: 60vw;
-  background-position: bottom right;
   padding: 5vh 5vw 5vh 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
+  background: url('./../../assets/couple.png') {
+    color: rgba(0,0,0,.1);
+    repeat: no-repeat;
+    size: 60vw;
+    position: bottom right;
+  }
   h1{
     font-size: calc(100% + 3em);
   }
@@ -31,23 +34,22 @@
 //     font-size: calc(100% + 1.8em)!important;
 //   }
 // }
-
-@media screen and (max-width: 414px){
+@include media-query(414px) {
   .hero{
     background-color: rgba(0,0,0,0);
     font-family: 'Raleway', sans-serif;
     font-weight: black;
     grid-template-columns: 1fr;
     margin-top: 1vh;
-  }
-  h1{
-    font-size: 2.5em!important;
-    text-align: center;
-  }
-  h2{
-    display: none;
-  }
-  button{
-    display: run-in;
+    h1{
+      font-size: 2.5em;
+      text-align: center;
+    }
+    h2{
+      display: none;
+    }
+    button{
+      display: run-in;
+    }
   }
 }

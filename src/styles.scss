@@ -1,19 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+@import 'styles/abstracts/variables';
+@import 'styles/abstracts/mixins';
 
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Helvetica Neue', sans-serif;
-  color: #353D38;
+  color: $black;
   background: radial-gradient(at bottom, #FBA498,#FAB3A9);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-color: #FAB3A9;
+  background-color: $pink;
   height: 100vh;
 }
 a{
-  color: #353D38;
+  color: $black;
   text-decoration: none;
 }
