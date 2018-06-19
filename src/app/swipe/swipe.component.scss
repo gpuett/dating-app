@@ -1,6 +1,6 @@
 @import '~styles/abstracts/variables';
 @import '~styles/abstracts/mixins';
-button{
+.accept, .reject {
   padding: 20px;
   border-radius: 50%;
 }
