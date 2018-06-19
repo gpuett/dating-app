@@ -31,4 +31,4 @@ export class DetailComponent implements OnInit {
   //   this.location.back();
   // }
 
-
+}
