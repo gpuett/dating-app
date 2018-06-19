@@ -20,3 +20,19 @@
     width: 55px;
   }
 }
+.info{
+  display: flex;
+  justify-content: space-between;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
+img{
+  size: inherit;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  width: inherit;
+}
