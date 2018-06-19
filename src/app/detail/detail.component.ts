@@ -12,7 +12,7 @@ import 'rxjs/add/operator/switchMap';
 })
 export class DetailComponent implements OnInit {
 
-  user: User;
+
 
   constructor(
     private dataService: DataService,
@@ -31,4 +31,4 @@ export class DetailComponent implements OnInit {
   //   this.location.back();
   // }
 
-}
+

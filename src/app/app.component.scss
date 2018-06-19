@@ -5,14 +5,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
-  background-color: #FAB3A9;
+  padding: 20px;
+  background-color: #F9FBF2;
 }
 h1{
   font-weight: 200;
   font-style: italic;
 }
 
+a:hover{
+  color: #FF6F59;
+}
 button{
   background-color: rgba(0,0,0,0);
   border: 1px #353D38 solid;
@@ -20,9 +23,13 @@ button{
   padding: 15px 45px 15px 45px;
   font-size: 1em;
 }
+svg:hover{
+  -webkit-filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
+  filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
+}
 button:hover{
-  border: 1px #F9FBF2 solid;
-  color: #F9FBF2;
+  border: 1px #FF6F59 solid;
+  color: #FF6F59;
 }
 
 .credits{
@@ -34,4 +41,8 @@ button:hover{
     flex-direction: row;
     align-self: center;
   }
+}
+.active{
+  padding-bottom: 10px;
+  border-bottom: 6px #6CD4FF solid;
 }
