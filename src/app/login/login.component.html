@@ -1,21 +1,21 @@
 <div class="panel">
   <h1>Create New Account</h1>
   <label for="name">Name</label><br>
-  <input type="text" name="name"placeholder="Enter name"><br>
+  <input type="text" #name placeholder="Enter name"><br>
   <label for="bio">Tell us about yourself</label><br>
-  <textarea name="bio" placeholder="Write a short biography!" rows="5"></textarea><br>
+  <textarea #bio placeholder="Write a short biography!" rows="5"></textarea><br>
   <label for="age">Age</label><br>
-  <input type="number" name="age" placeholder="Age"><br>
+  <input type="number" #age placeholder="Age"><br>
   <label for="orientation">You are a...</label><br>
-  <select class="menu" name="orientation">
+  <select class="menu" #orientation>
     <option value="mfw">Man seeking women</option>
     <option value="wfm">Woman seeking men</option>
     <option value="mfm">Man seeking men</option>
     <option value="wfw">Woman seeking women</option>
   </select><br>
   <label for="imageUrl"></label>Avatar<br>
-  <input type="text" name="imageUrl"placeholder="Enter an image url of you!"><br>
+  <input type="text" #imageUrl placeholder="Enter an image url of you!"><br>
   <label for="interests">What are you interested in?</label><br>
-  <input type="text" name="interests" placeholder="List some interests"><br>
-<button type="button" (click)="submitUser(name, bio, age, orientation, imageUrl, interests)" name="button">Create Account</button>
+  <input type="text" #interests placeholder="List some interests"><br>
+<button type="button" (click)="submitUser(name.value, bio.value, age.value, orientation.value, imageUrl.value, interests.value)" name="button">Create Account</button>
 </div>

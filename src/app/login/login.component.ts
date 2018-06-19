@@ -31,9 +31,11 @@ export class LoginComponent implements OnInit {
   //   })
   // }
 
-  submitUser(name, bio, age, orientation, imageUrl, interests) {
-    let newUser: User = new User(name, bio, age, orientation, imageUrl, interests);
-
+  submitUser(name: string, bio: string, age: number, orientation: string, imageUrl: string, interests: string) {
+    let newUser = new User(name, bio, age, orientation, imageUrl, interests);
+    // let newUser = new User("bob", "hello", 33, "MfW", "google.com", "coding");
+    this.dataService.addUserWithPromise(newUser).then(user => this.users.push(user));
+    console.log(newUser);
   }
 
 }
