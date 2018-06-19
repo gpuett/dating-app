@@ -1,4 +1,5 @@
 <div class="panel">
+
   <label for="name">Enter name</label><br>
   <input type="text" name="name"><br>
   <label for="bio">Tell us about yourself</label><br>
@@ -11,5 +12,5 @@
   <input type="text" name="imageUrl"><br>
   <label for="interests">Enter your interests</label><br>
   <input type="text" name="interests"><br>
-  <button type="submit" name="button">Create Account</button>
+  <button type="button" (click)="submitUser(name, bio, age, orientation, imageUrl, interests)" name="button">Create Account</button>
 </div>
