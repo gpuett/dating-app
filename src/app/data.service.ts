@@ -1,13 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Response, Headers, RequestOptions } from '@angular/http';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
+import {HttpHeaders} from '@angular/common/http';
+import {Observable} from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 
 import 'rxjs/add/operator/toPromise';
 import { User } from './user';
 
 @Injectable()
 export class DataService {
+
+
 
   private usersUrl = 'https://dating-app-server.herokuapp.com/users';
 
@@ -28,12 +33,13 @@ export class DataService {
     .catch(this.handleError)
   }
 
-  addUserWithPromise(user:User): Promise<User> {
+  addUserWithPromise(user: User): Promise<User>{
+
+    let headers = new Headers({'Content-Type': 'text/plain'});
+    let options = new RequestOptions({headers: headers});
     const url = `${this.usersUrl}/new`;
-    return this.http.post(url, User)
-    .toPromise()
-    .then(this.extractData)
-    .catch(this.handleError)
+    return this.http.post(url, user, options).toPromise().then(this.extractData).catch(this.handleError);
+
   }
 
   private handleError(error: any): Promise<any> {
