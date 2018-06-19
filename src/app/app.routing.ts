@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
 import { SwipeComponent } from './swipe/swipe.component';
 import { UserComponent } from './user/user.component';
-import { UserDetailsComponent } from './user-details/user-details.component';
 
 const appRoutes: Routes = [
   {
