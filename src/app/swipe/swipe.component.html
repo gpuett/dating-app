@@ -1,10 +1,10 @@
-<div class="panel">
-  {{user.picture}}
+<div class="panel" *ngFor ="let user of users">
+  {{user.imageUrl}}
   <div class="info">
     <h4>{{user.name}}</h4>
     <h4>{{user.age}}</h4>
   </div>
-  <p>{{user.biography}}</p>
+  <p>{{user.bio}}</p>
 
 <button name="reject" class="reject">
 <svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
