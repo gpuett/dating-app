@@ -1,15 +1,21 @@
 <div class="panel">
-  <label for="name">Enter name</label><br>
-  <input type="text" name="name"><br>
+  <h1>Create New Account</h1>
+  <label for="name">Name</label><br>
+  <input type="text" name="name"placeholder="Enter name"><br>
   <label for="bio">Tell us about yourself</label><br>
-  <input type="text" name="bio"><br>
-  <label for="age">Enter age</label><br>
-  <input type="number" name="age"><br>
-  <label for="orientation">Enter your sexual orientation</label><br>
-  <input type="text" name="orientation"><br>
-  <label for="imageUrl">Enter an image url of you!</label><br>
-  <input type="text" name="imageUrl"><br>
-  <label for="interests">Enter your interests</label><br>
-  <input type="text" name="interests"><br>
+  <textarea name="bio" placeholder="Write a short biography!" rows="5"></textarea><br>
+  <label for="age">Age</label><br>
+  <input type="number" name="age" placeholder="Age"><br>
+  <label for="orientation">You are a...</label><br>
+  <select class="menu" name="orientation">
+    <option value="mfw">Man seeking women</option>
+    <option value="wfm">Woman seeking men</option>
+    <option value="mfm">Man seeking men</option>
+    <option value="wfw">Woman seeking women</option>
+  </select><br>
+  <label for="imageUrl"></label>Avatar<br>
+  <input type="text" name="imageUrl"placeholder="Enter an image url of you!"><br>
+  <label for="interests">What are you interested in?</label><br>
+  <input type="text" name="interests" placeholder="List some interests"><br>
   <button type="submit" name="button">Create Account</button>
 </div>
