@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { DetailComponent } from './detail/detail.component';
 import { SwipeComponent } from './swipe/swipe.component';
-import { UserComponent } from './user/user.component'; 
+import { UserComponent } from './user/user.component';
+import{LoginComponent} from './login/login.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'users',
     component: UserComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
