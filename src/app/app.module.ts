@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { SwipeComponent } from './swipe/swipe.component';
 import { DetailComponent } from './detail/detail.component';
 import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UserComponent } from './user/user.component';
     HomeComponent,
     SwipeComponent,
     DetailComponent,
-    UserComponent
+    UserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Response } from '@angular/http';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
@@ -28,9 +28,22 @@ export class DataService {
     .catch(this.handleError)
   }
 
+  addUserWithPromise(user:User): Promise<User> {
+    const url = `${this.usersUrl}/new`;
+    return this.http.post(url, User)
+    .toPromise()
+    .then(this.extractData)
+    .catch(this.handleError)
+  }
+
   private handleError(error: any): Promise<any> {
     console.error('Error', error);
     return Promise.reject(error.message || error);
+  }
+
+  private extractData(res: Response) {
+    let body = res.json();
+    return body || {};
   }
 
 }
