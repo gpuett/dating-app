@@ -1,14 +1,20 @@
+@import '~styles/abstracts/variables';
+@import '~styles/abstracts/mixins';
 .hero{
+  min-height: 565px;
   height: 60vh;
-  background-color: rgba(0,0,0,.1);
-  background-image: url('./../../assets/couple.png');
-  background-repeat: no-repeat;
-  background-size: 60vw;
-  background-position: bottom right;
-  padding: 5vh 5vw 5vh 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
+  background: url('./../../assets/couple.png'){
+    color: rgba(0,0,0,.1);
+    repeat: no-repeat;
+    width: 30%;
+    position: bottom right;
+  }
+  .text{
+    padding-left: 30px;
+  }
   h1{
     font-size: calc(100% + 3em);
   }
@@ -31,8 +37,7 @@
 //     font-size: calc(100% + 1.8em)!important;
 //   }
 // }
-
-@media screen and (max-width: 414px){
+@include media-query(414px) {
   .hero{
     background-color: rgba(0,0,0,0);
     font-family: 'Raleway', sans-serif;
@@ -42,24 +47,24 @@
     background-position: bottom center;
     background-size: 140vw;
     padding: 0;
-    height: 84.5vh;
-  }
-  h1{
-    font-size: 2.5em!important;
-    text-align: center;
-  }
-  h2{
-    display: none;
-  }
-  button{
-    display: block!important;
-    border: 0px;
-    padding: 15px 50px 15px 50px;
-    border-radius: 5px;
-    font-family: 'Raleway', sans-serif!important;
-    font-weight: bold;
-    font-size: calc(100% + .5em);
-    background-color: #6CD4FF;
-    margin: auto;
+    height: 89vh;
+    h1{
+      font-size: 2.5em;
+      text-align: center;
+    }
+    h2{
+      display: none;
+    }
+    button{
+      display: block;
+      border: 0px;
+      padding: 15px 50px 15px 50px;
+      border-radius: 5px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      font-size: calc(100% + .5em);
+      background-color: $blue;
+      margin: auto;
+    }
   }
 }

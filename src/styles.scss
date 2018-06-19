@@ -1,29 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+@import 'styles/abstracts/variables';
+@import 'styles/abstracts/mixins';
 
 body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', sans-serif;
-  color: #353D38;
-  background: radial-gradient(at bottom, #FBA498,#FAB3A9);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-color: #FAB3A9;
+  font-family: 'Raleway', sans-serif;
+  color: $black;
+  background: radial-gradient(at bottom, #FBA498,#FAB3A9) {
+    repeat: no-repeat;
+    position: bottom;
+    color: $pink;
+  }
   height: 100vh;
 }
 a{
-  color: #353D38;
+  color: $black;
   text-decoration: none;
 }
 
 .panel{
-  margin-top: 10px;
-  background-color: #F9FBF2;
+  background-color: $white;
   width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  margin-top: 10px;
   padding: 2vh;
   border-radius: 10px;
+}
+@include media-query(414px) {
+  .panel{
+    width: 85vw;
+  }
 }

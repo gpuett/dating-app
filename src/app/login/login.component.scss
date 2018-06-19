@@ -35,4 +35,20 @@ textarea{
   border:1px #FF6F59 solid;
   background-color:#ffddd8;
   border-radius: 5px;
+  font-size: 1em;
+}
+@media screen and (max-width: 414px){
+  h1{
+    font-size: 2em!important;
+    text-align: center;
+  }
+  input {
+    width: 90%
+  }
+  textarea{
+    width: 90%;
+  }
+  select{
+    width: 90%;
+  }
 }
