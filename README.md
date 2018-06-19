@@ -28,6 +28,8 @@ API: https://dating-app-server.herokuapp.com/users
 
   ![Web-view user detail page](./src/assets/user-detail.png)
 
+  ![Web-view account creation](./src/assets/user-info.png)
+
 #### Mobile view sketches
   ![Mobile view splash](./src/assets/mobile-splash.png)
 
