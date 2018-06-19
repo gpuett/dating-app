@@ -12,6 +12,7 @@ import { SwipeComponent } from './swipe/swipe.component';
 import { DetailComponent } from './detail/detail.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
+import { MatchComponent } from './match/match.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginComponent } from './login/login.component';
     SwipeComponent,
     DetailComponent,
     UserComponent,
-    LoginComponent
+    LoginComponent,
+    MatchComponent
   ],
   imports: [
     BrowserModule,

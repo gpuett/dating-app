@@ -1,15 +1,17 @@
-  <div class="panel">
-    <h3>User List:</h3>
-    <div class="grid">
-    <a *ngFor="let user of users" [routerLink]="['/detail', user.id]">
-      <div>
-        <h5>{{user.id}} - {{user.name}}</h5>
+<div class="panel">
+  <h3>User List:</h3>
+  <div class="grid">
+    <div *ngFor="let user of users">
+      <a  [routerLink]="['/detail', user.id]">
+        <h5>User: {{user.id}} - {{user.name}}</h5>
         <img src="{{user.imageUrl}}">
         <h5>Bio: {{user.bio}}</h5>
         <h5>Age: {{user.age}}</h5>
         <h5>Interests: {{user.interests}}</h5>
         <h5>Orientation: {{user.orientation}}</h5>
-      </div>
-    </a>
+      </a>
+      <button type="button" name="button">Edit user</button>
+      <button type="button" name="button">Delete user</button>
+    </div>
   </div>
 </div>
