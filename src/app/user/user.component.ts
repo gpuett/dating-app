@@ -21,9 +21,19 @@ export class UserComponent implements OnInit {
     return apiUsers;
   }
 
+  // private getIdOfUser = (userId: string) => {
+  //   return this.users.findIndex((user) => {
+  //     return user.id === userId
+  //   });
+  // }
+
+  selectUser(user: User) {
+    this.selectedUser = user;
+  }
+
+
   ngOnInit() {
     this.getUsers();
-
   }
 
 }
