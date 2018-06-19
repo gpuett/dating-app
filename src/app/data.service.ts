@@ -12,12 +12,11 @@ import { User } from './user';
 @Injectable()
 export class DataService {
 
-
-
   private usersUrl = 'https://dating-app-server.herokuapp.com/users';
 
   constructor(private http: Http) { }
 
+// get("api/users") read
   getUsers(): Promise<User[]> {
     return this.http.get(this.usersUrl)
     .toPromise()
@@ -25,6 +24,7 @@ export class DataService {
     .catch(this.handleError);
   }
 
+//get("api/users/:id") read
   getUser(id: number): Promise<User> {
     const url = `${this.usersUrl}/${id}`;
     return this.http.get(url)
@@ -33,14 +33,18 @@ export class DataService {
     .catch(this.handleError)
   }
 
+// post("api/users/new") create
   addUserWithPromise(user: User): Promise<User>{
-
     let headers = new Headers({'Content-Type': 'text/plain'});
     let options = new RequestOptions({headers: headers});
     const url = `${this.usersUrl}/new`;
     return this.http.post(url, user, options).toPromise().then(this.extractData).catch(this.handleError);
-
   }
+
+  //post("api/users/:id/delete") delete
+
+
+  //post("api/users/:id/update") update
 
   private handleError(error: any): Promise<any> {
     console.error('Error', error);

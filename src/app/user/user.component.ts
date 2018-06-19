@@ -10,15 +10,20 @@ import { DataService } from '../data.service';
 })
 export class UserComponent implements OnInit {
   users: User[];
+  selectedUser: User;
+
 
   constructor(private dataService: DataService) { }
 
   getUsers() {
-    return this.dataService.getUsers().then(users => this.users = users);
+    let apiUsers = this.dataService.getUsers().then(users => this.users = users);
+    console.log(this.users);
+    return apiUsers;
   }
 
   ngOnInit() {
     this.getUsers();
+
   }
 
 }
