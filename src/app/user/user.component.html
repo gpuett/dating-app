@@ -4,7 +4,9 @@
     <div *ngFor="let user of users">
       <a  [routerLink]="['/detail', user.id]">
         <h5>User: {{user.id}} - {{user.name}}</h5>
-        <img src="{{user.imageUrl}}">
+        <div class="user-image">
+          <img src="{{user.imageUrl}}">
+        </div>
         <h5>Bio: {{user.bio}}</h5>
         <h5>Age: {{user.age}}</h5>
         <h5>Interests: {{user.interests}}</h5>

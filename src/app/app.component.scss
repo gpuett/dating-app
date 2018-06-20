@@ -4,60 +4,58 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 80px;
   background-color: $white;
-}
-h1{
-  font-weight: 200;
-  font-style: italic;
-}
-
-a:hover{
-  color: $orange;
-}
-button{
-  background-color: rgba(0,0,0,0);
-  border: 1px $black solid;
-  border-radius: 10px;
-  padding: 15px 45px 15px 45px;
-  font-size: 1em;
-}
-svg:hover{
-  -webkit-filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
-  filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
-}
-button:hover{
-  border: 1px $orange solid;
-  color: $orange;
-}
-
-.credits{
-  width: 100%;
-  position: fixed;
-  bottom: 0px;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  p{
-    font-size: 0.75em;
+  padding: 15px;
+  h1{
+    font-weight: 200;
+    font-style: italic;
   }
-}
-.active{
-  padding-bottom: 10px;
-  border-bottom: 6px $blue solid;
-}
 
-@include media-query(414px) {
-  .navigation{
-    justify-content: center;
-    h1{
-      display: none;
-    }
-    button{
-      display: none;
-    }
+  a:hover{
+    color: $orange;
   }
+  button{
+    background-color: rgba(0,0,0,0);
+    border: 1px $black solid;
+    border-radius: 10px;
+    padding: 15px 45px 15px 45px;
+    font-size: 1.4em;
+    font-family: $Raleway;
+  }
+  svg:hover{
+    -webkit-filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
+    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
+  }
+  button:hover{
+    border: 1px $orange solid;
+    color: $orange;
+  }
+
   .credits{
-    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    p{
+      font-size: 0.75em;
+    }
+  }
+
+  @include media-query(414px) {
+    .navigation{
+      justify-content: center;
+      h1{
+        display: none;
+      }
+      button{
+        display: none;
+      }
+    }
+    .credits{
+      display: none;
+    }
   }
 }
