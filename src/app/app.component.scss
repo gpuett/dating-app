@@ -5,18 +5,18 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background-color: $white;
+  background-color: transparentize($white, .8);
   padding: 15px;
-  h1{
-    font-weight: 200;
+  .nav-link {
+    font-size: 1.6em;
     font-style: italic;
   }
-
   a:hover{
     color: $orange;
+    cursor: pointer;
   }
   button{
-    background-color: rgba(0,0,0,0);
+    background-color: transparent;
     border: 1px $black solid;
     border-radius: 10px;
     padding: 15px 45px 15px 45px;
@@ -24,14 +24,14 @@
     font-family: $Raleway;
   }
   svg:hover{
-    -webkit-filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
-    filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.15));
+    -webkit-filter: drop-shadow(0 2px 0px rgba(0,0,0,0.15));
+    filter: drop-shadow(0 2px 0px rgba(0,0,0,0.15));
   }
   button:hover{
     border: 1px $orange solid;
     color: $orange;
+    cursor: pointer;
   }
-
   .credits{
     width: 100%;
     position: fixed;
