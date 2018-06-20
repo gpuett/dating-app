@@ -13,7 +13,7 @@ import { DetailComponent } from './detail/detail.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { MatchComponent } from './match/match.component';
-
+import { FilterPipe } from './filter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { MatchComponent } from './match/match.component';
     DetailComponent,
     UserComponent,
     LoginComponent,
-    MatchComponent
+    MatchComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
