@@ -8,6 +8,22 @@
       width: 100px;
     }
   }
+  & .swipe-side {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 80vh;
+    .swiper {
+      display: flex;
+      justify-content: flex-start;
+      &.is-active {
+        transform: translateX(-100%);
+      }
+      & .panel {
+        min-width: 65vw;
+        margin: 0 15%;
+      }
+    }
+  }
   .user-image-container {
     width: 110%;
     position: absolute;
