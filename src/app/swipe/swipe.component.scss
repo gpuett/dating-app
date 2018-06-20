@@ -4,6 +4,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: $white;
+  width: 65vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 2em;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 .accept, .reject {
   padding: 20px;
@@ -26,6 +34,7 @@
   }
 }
 .info{
+  margin-top: 410px;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
@@ -40,7 +49,17 @@
   display: flex;
   justify-content: space-between;
 }
-.user-image {
-  width: 100%;
-  max-width: 100%;
+.user-image-container {
+  width: 110%;
+  position: absolute;
+  max-height: 100%;
+  height: 450px;
+  overflow: hidden;
+  top: -2em;
+  left: -2em;
+  right: -2em;
+  .user-image {
+    width: 100%;
+    max-width: 100%;
+  }
 }
