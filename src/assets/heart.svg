@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="235px" height="235px" viewBox="0 0 235 235" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>heart</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.6%" y="-0.6%" width="101.3%" height="103.4%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.833864796   0 0 0 0 0.254742668   0 0 0 0 0.254742668  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-2" cx="117.5" cy="117.5" r="117.5"></circle>
+        <filter x="-0.4%" y="-0.4%" width="100.9%" height="101.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.835294118   0 0 0 0 0.254901961   0 0 0 0 0.254901961  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="heart" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g filter="url(#filter-1)">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="#FF6F59" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <path d="M185.693295,68.982958 C167.712391,53.7640401 140.970718,56.50149 124.466348,73.4150198 L118.00241,80.0305237 L111.538471,73.4150198 C95.0669134,56.50149 68.2924285,53.7640401 50.3115244,68.982958 C29.7056709,86.4504955 28.6228792,117.800815 47.0631494,136.734843 L110.554115,201.847044 C114.655599,206.050985 121.316408,206.050985 125.417892,201.847044 L188.908858,136.734843 C207.38194,117.800815 206.299148,86.4504955 185.693295,68.982958 Z" id="Shape" fill="#CD3B24" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

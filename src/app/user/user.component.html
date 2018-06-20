@@ -2,18 +2,19 @@
   <h3>User List:</h3>
   <div class="grid">
     <div *ngFor="let user of users">
-      <a  [routerLink]="['/detail', user.id]">
-        <h5>User: {{user.id}} - {{user.name}}</h5>
-        <div class="user-image">
-          <img src="{{user.imageUrl}}">
-        </div>
+        <h5>User: {{user.id}} - {{user.name}}</h5><br>
+        <img src="{{user.imageUrl}}">
         <h5>Bio: {{user.bio}}</h5>
         <h5>Age: {{user.age}}</h5>
         <h5>Interests: {{user.interests}}</h5>
         <h5>Orientation: {{user.orientation}}</h5>
-      </a>
-      <button type="button" name="button">Edit user</button>
-      <button type="button" name="button">Delete user</button>
+        <input type="text" #newName [(ngModel)]="user.name"><br>
+        <input type="text" #newBio [(ngModel)]="user.bio"><br>
+        <input type="number" #newAge [(ngModel)]="user.age"><br>
+        <input type="text" #newInterests [(ngModel)]="user.interests"><br>
+        <input type="text" #newImageUrl [(ngModel)]="user.imageUrl"><br>
+      <button (click)="updateUser(user.id, newName.value, newBio.value, newAge.value, user.orientation, newImageUrl.value, newInterests.value)" type="button" name="button">Edit user</button>
+      <button (click)="deleteUser(user.id)" type="button" name="button">Delete user</button>
     </div>
   </div>
 </div>

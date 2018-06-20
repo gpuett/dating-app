@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { User } from '../user';
 import { Router } from '@angular/router';
+import { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-swipe',
@@ -11,7 +12,7 @@ import { Router } from '@angular/router';
 })
 export class SwipeComponent implements OnInit {
   users;
-
+  
   constructor(private dataService: DataService) { }
 
   getUsers() {
@@ -20,7 +21,6 @@ export class SwipeComponent implements OnInit {
 
   ngOnInit() {
     this.getUsers();
-    console.log(this.dataService.getUsers())
   }
 
 }
