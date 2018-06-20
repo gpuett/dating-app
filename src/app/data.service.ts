@@ -50,7 +50,15 @@ export class DataService {
 }
 
   //post("api/users/:id/update") update
-  
+  updateUser(userId: number, user: User): Promise<void | User>{
+  const putUrl = this.usersUrl + '/' + userId + '/update';
+  let headers = new Headers({'Content-Type': 'text/plain'});
+  let options = new RequestOptions({headers: headers});
+  return this.http.post(putUrl, user, options)
+              .toPromise()
+              .then(response => response.json() as User)
+              .catch(this.handleError);
+}
 
   private handleError(error: any): Promise<any> {
     console.error('Error', error);

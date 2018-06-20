@@ -20,12 +20,11 @@ export class UserComponent implements OnInit {
     return apiUsers;
   }
 
-  // private getIdOfUser = (userId: string) => {
-  //   return this.users.findIndex((user) => {
-  //     return user.id === userId
-  //   });
-  // }
-
+  updateUser(userId: number, name: string, bio: string, age: number, orientation: string, imageUrl: string, interests: string){
+    let userToUpdate = new User(name, bio, age, orientation, imageUrl, interests);
+    this.dataService.updateUser(userId, userToUpdate);
+    this.router.navigate(['/']);
+  }
 
   deleteUser = (userId: number) => {
     this.dataService.deleteUser(userId);
