@@ -12,11 +12,16 @@ import { FilterPipe } from '../filter.pipe';
 })
 export class SwipeComponent implements OnInit {
   users;
-  
+  public show: boolean = false;
+
   constructor(private dataService: DataService) { }
 
   getUsers() {
     return this.dataService.getUsers().then(users => this.users = users);
+  }
+
+  toggle() {
+    this.show = !this.show;
   }
 
   ngOnInit() {
