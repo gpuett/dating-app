@@ -12,8 +12,16 @@ export class FilterPipe implements PipeTransform{
       return items;
     }
     let results = [];
-    for(var i = 0; i<items.length; i++){
-      if(items[i].orientation === parameter){
+    for(var i =0; i<items.length; i++){
+      if(parameter === 'bim'){
+        if(items[i].orientation === "wfm" || items[i].orientation === 'mfm'){
+          results.push(items[i]);
+        }
+      } else if(parameter === 'biw'){
+        if(items[i].orientation ==='mfw' || items[i].orientation === 'wfw'){
+          results.push(items[i]);
+        }
+      } else if (items[i].orientation === parameter){
         results.push(items[i]);
       }
     }
