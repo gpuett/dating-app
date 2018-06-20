@@ -1,4 +1,14 @@
-<div class="panel" *ngFor ="let user of users">
+<div class="panel">
+  <h3>Tailor your matches</h3>
+  <label for="user">Who are you looking for?</label><br>
+  <select class="filter" [(ngModel)]="parameter">
+    <option value="m4w">Straight men</option>
+    <option value="w4m">Straight women</option>
+    <option value="m4m">Gay men</option>
+    <option value="w4w">Gay women</option>
+  </select>
+</div>
+<div class="panel" *ngFor ="let user of users | filter: parameter">
   <div class="image">
     <img src="{{user.imageUrl}}">
   </div>
@@ -6,7 +16,7 @@
     <h4>{{user.name}}</h4>
     <h4>{{user.age}}</h4>
   </div>
-  <p>{{user.bio}}</p>
+
 <div class="buttons">
   <button name="reject" class="reject">
     <svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
