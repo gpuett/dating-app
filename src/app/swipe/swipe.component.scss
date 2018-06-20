@@ -1,5 +1,10 @@
 @import '~styles/abstracts/variables';
 @import '~styles/abstracts/mixins';
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .accept, .reject {
   padding: 20px;
   border-radius: 50%;
@@ -23,16 +28,19 @@
 .info{
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
+  h2 {
+    margin: 0;
+  }
+  p {
+    flex: 1 0 100%;
+  }
 }
 .buttons{
   display: flex;
   justify-content: space-between;
 }
-img{
-  size: inherit;
-}
-.image{
-  display: flex;
-  justify-content: center;
-  width: inherit;
+.user-image {
+  width: 100%;
+  max-width: 100%;
 }

@@ -1,15 +1,13 @@
 <div class="panel" *ngFor ="let user of users">
-  <div class="image">
-    <img src="{{user.imageUrl}}">
-  </div>
+  <img class="user-image" src="{{user.imageUrl}}">
   <div class="info">
-    <h4>{{user.name}}</h4>
-    <h4>{{user.age}}</h4>
+    <h2>{{user.name}}</h2>
+    <h2>{{user.age}}</h2>
+    <p>{{user.bio}}</p>
   </div>
-  <p>{{user.bio}}</p>
-<div class="buttons">
-  <button name="reject" class="reject">
-    <svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <div class="buttons">
+    <button name="reject" class="reject">
+      <svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
       <desc>Created with Sketch.</desc>
       <defs></defs>
@@ -21,7 +19,8 @@
           </g>
         </g>
       </g>
-    </svg></button>
+      </svg>
+    </button>
     <button name="accept" class="accept">
       <svg width="59px" height="59px" viewBox="0 0 72 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
