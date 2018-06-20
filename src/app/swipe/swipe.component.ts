@@ -12,7 +12,7 @@ import { FilterPipe } from '../filter.pipe';
 })
 export class SwipeComponent implements OnInit {
   users;
-  
+  showHide = true;
   constructor(private dataService: DataService) { }
 
   getUsers() {

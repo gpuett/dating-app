@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 import { routing } from './app.routing';
-
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -28,9 +28,10 @@ import { FilterPipe } from './filter.pipe';
     FormsModule,
     HttpModule,
     routing,
-
+    CommonModule
   ],
   providers: [],
+  entryComponents: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
