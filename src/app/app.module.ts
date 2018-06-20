@@ -9,7 +9,6 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SwipeComponent } from './swipe/swipe.component';
-import { DetailComponent } from './detail/detail.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './login/login.component';
 import { MatchComponent } from './match/match.component';
@@ -19,7 +18,6 @@ import { FilterPipe } from './filter.pipe';
     AppComponent,
     HomeComponent,
     SwipeComponent,
-    DetailComponent,
     UserComponent,
     LoginComponent,
     MatchComponent,
