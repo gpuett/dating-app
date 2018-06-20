@@ -21,7 +21,7 @@ export class SwipeComponent implements OnInit {
     return this.dataService.getUsers().then(users => this.users = users);
   }
 
-  toggle() {
+  toggle(target) {
     this.show = !this.show;
   }
 
