@@ -1,38 +1,59 @@
 @import '~styles/abstracts/variables';
 @import '~styles/abstracts/mixins';
-.accept, .reject {
-  padding: 20px;
-  border-radius: 50%;
-}
-.accept{
-  border: 0px;
-  background-color: $orange;
-  svg{
+.swipe-container {
+  margin-bottom: 40px;
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $white;
+    width: 65vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 2em;
+    border-radius: 10px;
+    overflow: hidden;
     position: relative;
-    top: 8px;
   }
-}
-.reject{
-  border: 0px;
-  background-color: $grey;
-  svg{
-    height: 55px;
-    width: 55px;
+  .accept, .reject {
+    img {
+      height: 105px;
+      width: 100px;
+    }
   }
-}
-.info{
-  display: flex;
-  justify-content: space-between;
-}
-.buttons{
-  display: flex;
-  justify-content: space-between;
-}
-img{
-  size: inherit;
-}
-.image{
-  display: flex;
-  justify-content: center;
-  width: inherit;
+  .user-image-container {
+    width: 110%;
+    position: absolute;
+    max-height: 100%;
+    height: $userImageContainerHeight;
+    overflow: hidden;
+    top: -2em;
+    left: -2em;
+    right: -2em;
+    .user-image {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  .info{
+    margin-top: $userImageContainerHeight;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    h2 {
+      margin: 0;
+    }
+    p {
+      flex: 1 0 100%;
+    }
+  }
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @include media-query(860px) {
+    $userImageContainerHeight: 250px;
+  }
 }
