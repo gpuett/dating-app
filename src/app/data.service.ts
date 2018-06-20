@@ -42,9 +42,15 @@ export class DataService {
   }
 
   //post("api/users/:id/delete") delete
-
+  deleteUser(userId: number): Promise<void | number> {
+  return this.http.post(this.usersUrl + '/' + userId + '/delete', null)
+    .toPromise()
+    .then(response => response.json() as number)
+    .catch(this.handleError);
+}
 
   //post("api/users/:id/update") update
+  
 
   private handleError(error: any): Promise<any> {
     console.error('Error', error);

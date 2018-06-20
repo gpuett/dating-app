@@ -10,8 +10,8 @@
         <h5>Interests: {{user.interests}}</h5>
         <h5>Orientation: {{user.orientation}}</h5>
       </a>
-      <button type="button" name="button">Edit user</button>
-      <button type="button" name="button">Delete user</button>
+      <button [routerLink]="['/detail']" type="button" name="button">Edit user</button>
+      <button (click)="deleteUser(user.id)" type="button" name="button">Delete user</button>
     </div>
   </div>
 </div>
