@@ -22,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'detail',
+    component: DetailComponent
   }
 ];
 
