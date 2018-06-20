@@ -1,5 +1,8 @@
 @import '~styles/abstracts/variables';
 @import '~styles/abstracts/mixins';
+.swipe-container {
+  margin-bottom: 40px;
+}
 .panel {
   display: flex;
   flex-direction: column;
