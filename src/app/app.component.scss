@@ -5,32 +5,38 @@
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  background-color: transparentize($white, .8);
+  background-color: transparentize($white, .7);
   padding: 15px;
-  .nav-link {
-    font-size: 1.6em;
-    font-style: italic;
-  }
-  a:hover{
-    color: $orange;
-    cursor: pointer;
-  }
-  button{
-    background-color: transparent;
-    border: 1px $black solid;
-    border-radius: 10px;
-    padding: 15px 45px 15px 45px;
-    font-size: 1.4em;
-    font-family: $Raleway;
-  }
+
   svg:hover{
     -webkit-filter: drop-shadow(0 2px 0px rgba(0,0,0,0.15));
     filter: drop-shadow(0 2px 0px rgba(0,0,0,0.15));
   }
-  button:hover{
-    border: 1px $orange solid;
-    color: $orange;
-    cursor: pointer;
+  .nav-link-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-link {
+      font-size: 1.6em;
+      font-style: italic;
+    }
+    a:hover{
+      color: $orange;
+    }
+    button{
+      background-color: transparent;
+      border: 1px $black solid;
+      border-radius: 10px;
+      padding: 15px 45px 15px 45px;
+      font-size: 1.4em;
+      font-family: $Raleway;
+    }
+    button:hover{
+      border: 1px $orange solid;
+      color: $orange;
+      cursor: pointer;
+    }
   }
   @include media-query(414px) {
     .navigation{
