@@ -32,18 +32,6 @@
     color: $orange;
     cursor: pointer;
   }
-  .credits{
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    p{
-      font-size: 0.75em;
-    }
-  }
-
   @include media-query(414px) {
     .navigation{
       justify-content: center;
@@ -54,6 +42,24 @@
         display: none;
       }
     }
+  }
+}
+.wrapper {
+  display: flex;
+  height: calc(100% - 110px);
+  flex-direction: column;
+  .credits{
+    flex: 1;
+    height: 30px;
+    padding: 1.4em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    p{
+      font-size: 0.75em;
+    }
+  }
+  @include media-query(414px) {
     .credits{
       display: none;
     }
