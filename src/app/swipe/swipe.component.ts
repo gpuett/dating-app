@@ -12,6 +12,7 @@ import { FilterPipe } from '../filter.pipe';
 })
 export class SwipeComponent implements OnInit {
   users;
+  user: User;
   public show: boolean = false;
 
   constructor(private dataService: DataService) { }
@@ -20,8 +21,9 @@ export class SwipeComponent implements OnInit {
     return this.dataService.getUsers().then(users => this.users = users);
   }
 
-  toggle() {
-    this.show = !this.show;
+  toggle(user) {
+    user.rejected = true;
+    // console.log(user.rejected);
   }
 
   ngOnInit() {
