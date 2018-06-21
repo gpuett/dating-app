@@ -11,6 +11,7 @@ A dating app with a swiping and matching feature built in Angular and a custom d
 * A 'liked' user should be appended to a list which will populate another page.
 
 ### Setup and installation instructions
+Server Repository: https://github.com/gpuett/dating-app-server
 API: https://dating-app-server.herokuapp.com/users
 
   1. If Angular is not installed, run `npm install -g @angular/cli@1.6.5`
