@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { SwipeComponent } from './swipe/swipe.component';
 import { UserComponent } from './user/user.component';
 import{LoginComponent} from './login/login.component';
-
+import { MatchComponent } from './match/match.component';
 const appRoutes: Routes = [
   {
     path: '',
@@ -21,6 +21,10 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'match',
+    component: MatchComponent
   }
 ];
 
