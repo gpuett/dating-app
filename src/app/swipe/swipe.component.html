@@ -16,6 +16,11 @@
       <div class="panel-container" *ngFor="let user of users | filter: parameter">
         <div class="panel" *ngIf="!user.rejected">
           <div class="user-image-container">
+            <div class="hearted" id="{{user.id}}">
+              <div class="hearted-image">
+                <img src="./../assets/heart.svg" alt="">
+              </div>
+            </div>
             <img class="user-image" src="{{user.imageUrl}}">
           </div>
           <div class="info">
@@ -25,9 +30,9 @@
           </div>
           <div class="buttons">
             <div name="reject" class="reject">
-              <img (click)="toggle(user)" src="./../assets/dislike.svg" alt="">
+              <img (click)="reject(user)" src="./../assets/dislike.svg" alt="">
             </div>
-            <div name="accept" class="accept" (click)="likeUser()">
+            <div name="accept" class="accept" (click)="likeUser(user)">
               <img src="./../assets/heart.svg" alt="">
             </div>
           </div>
