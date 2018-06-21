@@ -21,9 +21,9 @@ export class SwipeComponent implements OnInit {
   }
   likeUser() {
     const active = document.querySelector('.swiper');
-    const pos = (num) => num += 100;
-    const isActive = () => active.setAttribute('style', "transform: translateX(-" + pos(100) + '%)');
-    isActive();
+    // const pos = (num) => num += num;
+    const isActive = (num) => active.setAttribute('style', "transform: translateX(-" + (num += num) + '%)');
+    isActive(100);
   }
 
   ngOnInit() {
