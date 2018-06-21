@@ -18,7 +18,6 @@ export class DataService {
 
 // get("api/users") read
   getUsers(): Promise<User[]> {
-
     return this.http.get(this.usersUrl)
     .toPromise()
     .then((response) => {
