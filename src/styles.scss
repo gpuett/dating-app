@@ -39,6 +39,7 @@ a{
 @include media-query(414px) {
   .panel{
     width: 85vw;
+    padding: 1em;
   }
 }
 select{

@@ -12,8 +12,6 @@
     text-align: center;
   }
   .input {
-    // width: 40%;
-    // padding: 0 20px;
     flex: 1 0 40%;
     margin: 20px 0;
     height: 60px;
@@ -71,21 +69,18 @@ button{
   background-color: #6CD4FF;
 }
 
-@media screen and (max-width: 414px){
-  .panel{
-    width: 95vw;
-  }
+@include media-query(414px){
   h1{
     font-size: 2em!important;
     text-align: center;
   }
   input {
-    width: 90%
+    width: 85%;
   }
   textarea{
-    width: 90%;
+    width: 85%;
   }
   select{
-    width: 90%;
+    width: 85%;
   }
 }
