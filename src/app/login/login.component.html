@@ -25,6 +25,6 @@
   <div class="input bio">
     <textarea #bio placeholder="Write a short biography!" rows="5"></textarea>
   </div>
-  <button type="button" (click)="submitUser(name.value, bio.value, age.value, orientation.value, imageUrl.value, interests.value)" name="button">Create Account</button>
+  <button type="button" routerLink="browse" (click)="submitUser(name.value, bio.value, age.value, orientation.value, imageUrl.value, interests.value)" name="button">Create Account</button>
 </div>
 </div>

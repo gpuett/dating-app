@@ -63,3 +63,17 @@
     $userImageContainerHeight: 250px;
   }
 }
+@include media-query(414px) {
+  .swipe-container{
+    .swipe-side{
+      .swiper{
+        & .panel-container{
+          margin: 0;
+          .panel{
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
