@@ -35,6 +35,26 @@
     top: -2em;
     left: -2em;
     right: -2em;
+    .hearted {
+      display: flex;
+      position: absolute;
+      opacity: 0;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      transition: opacity 0.3s ease-in;
+      background-color: transparentize(black, .8);
+      &.been-hearted {
+        transition: opacity 0.3s ease-in;
+        opacity: 1;
+      }
+      .hearted-image {
+        img {
+          height: 200px;
+        }
+      }
+    }
     .user-image {
       width: 100%;
       max-width: 100%;

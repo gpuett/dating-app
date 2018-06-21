@@ -25,6 +25,7 @@ export class DataService {
       for (var userJson of response.json()) {
         var user = userJson as User;
         user.rejected = false;
+        user.liked = false;
         newArrayOfUserObjects.push(user)
       }
       return newArrayOfUserObjects;
