@@ -18,13 +18,12 @@
         </div>
         <div class="info">
           <h2>{{user.name}}</h2>
-          <p>{{user.rejected}}</p>
           <h2>{{user.age}}</h2>
           <p>{{user.bio}}</p>
         </div>
         <div class="buttons">
           <div name="reject" class="reject">
-            <img (click)="toggle(user)" src="./../assets/dislike.svg" alt="">
+            <img (click)="reject(user)" src="./../assets/dislike.svg" alt="">
           </div>
           <div name="accept" class="accept">
             <img src="./../assets/heart.svg" alt="">
