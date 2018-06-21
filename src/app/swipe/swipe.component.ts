@@ -18,6 +18,12 @@ export class SwipeComponent implements OnInit {
   getUsers() {
     return this.dataService.getUsers().then(users => this.users = users);
   }
+  likeUser() {
+    const active = document.querySelector('.swiper');
+    // const pos = (num) => num += num;
+    const isActive = (num) => active.setAttribute('style', "transform: translateX(-" + (num += num) + '%)');
+    isActive(100);
+  }
 
   reject(user) {
     user.rejected = true;

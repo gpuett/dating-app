@@ -1,22 +1,30 @@
 <div class="panel">
+  <div class="login-container">
   <h1>Create New Account</h1>
-  <label for="name">Name</label><br>
-  <input type="text" #name placeholder="Enter name"><br>
-  <label for="bio">Tell us about yourself</label><br>
-  <textarea #bio placeholder="Write a short biography!" rows="5"></textarea><br>
-  <label for="age">Age</label><br>
-  <input type="number" #age placeholder="Age"><br>
-  <label for="orientation">You are a...</label><br>
-  <select class="menu" #orientation>
-    <option value="mfw">Man seeking women</option>
-    <option value="wfm">Woman seeking men</option>
-    <option value="mfm">Man seeking men</option>
-    <option value="wfw">Woman seeking women</option>
-  </select><br>
-  <label for="imageUrl"></label>Avatar<br>
-  <input type="text" #imageUrl placeholder="Enter an image url of you!"><br>
-  <label for="interests">What are you interested in?</label><br>
-  <textarea #interests placeholder="List some interests" rows="3"></textarea><br>
-<button type="button" (click)="submitUser(name.value, bio.value, age.value, orientation.value, imageUrl.value, interests.value)" name="button">Create Account</button>
-
+  <div class="input name">
+    <input type="text" #name placeholder="Enter name">
+  </div>
+  <div class="input">
+    <input type="number" #age placeholder="Age">
+  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="input dropdown">
+    <label><img src="./../assets/sort-down.svg" alt=""></label>
+    <select class="menu" #orientation>
+      <option value="mfw">Man seeking women</option>
+      <option value="wfm">Woman seeking men</option>
+      <option value="mfm">Man seeking men</option>
+      <option value="wfw">Woman seeking women</option>
+    </select>
+  </div>
+  <div class="input">
+    <input type="text" #imageUrl placeholder="Enter an image url of you!">
+  </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="input">
+    <input type="text" #interests placeholder="List some interests">
+  </div>
+  <div class="input bio">
+    <textarea #bio placeholder="Write a short biography!" rows="5"></textarea>
+  </div>
+  <button type="button" (click)="submitUser(name.value, bio.value, age.value, orientation.value, imageUrl.value, interests.value)" name="button">Create Account</button>
+</div>
 </div>
