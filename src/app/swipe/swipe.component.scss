@@ -2,24 +2,29 @@
 @import '~styles/abstracts/mixins';
 .swipe-container {
   margin-bottom: 40px;
-
-  .panel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $white;
-    width: 65vw;
-    margin: 0 auto;
-    margin-top: 40px;
-    padding: 2em;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-  }
   .accept, .reject {
     img {
       height: 105px;
       width: 100px;
+    }
+  }
+  & .swipe-side {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 80vh;
+    .swiper {
+      display: flex;
+      justify-content: flex-start;
+      &.is-active {
+        transform: translateX(-100%);
+      }
+      & .panel-container {
+        min-width: 100%;
+        .panel {
+          min-width: 65vw;
+          margin: 0 15%;
+        }
+      }
     }
   }
   .user-image-container {
@@ -43,6 +48,7 @@
     flex-flow: row wrap;
     h2 {
       margin: 0;
+      font-size: 2.4em;
     }
     p {
       flex: 1 0 100%;

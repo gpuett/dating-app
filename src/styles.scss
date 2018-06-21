@@ -14,11 +14,24 @@ body{
     position: bottom;
     color: $pink;
   }
-  height: 100vh;
+  height: 100%;
 }
 a{
   color: $black;
   text-decoration: none;
+}
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $white;
+  width: 65vw;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 2em;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 @include media-query(414px) {
   .panel{
