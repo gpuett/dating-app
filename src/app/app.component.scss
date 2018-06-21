@@ -38,15 +38,12 @@
       cursor: pointer;
     }
   }
-  @include media-query(414px) {
-    .navigation{
-      justify-content: center;
-      h1{
-        display: none;
-      }
-      button{
-        display: none;
-      }
+}
+@include media-query(414px) {
+  .navigation{
+    justify-content: center;
+    .nav-link-container{
+      display: none;
     }
   }
 }
