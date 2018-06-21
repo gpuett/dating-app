@@ -9,12 +9,12 @@
     }
   }
   & .swipe-side {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    max-height: 80vh;
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+    // max-height: 80vh;
     .swiper {
-      display: flex;
-      justify-content: flex-start;
+      // display: flex;
+      // justify-content: flex-start;
       &.is-active {
         transform: translateX(-100%);
       }
@@ -22,7 +22,7 @@
         min-width: 100%;
         .panel {
           min-width: 65vw;
-          margin: 0 15%;
+          margin: 30px 15%;
         }
       }
     }
