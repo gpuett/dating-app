@@ -22,7 +22,7 @@
         min-width: 100%;
         .panel {
           min-width: 65vw;
-          margin: 30px 15%;
+          margin: 30px auto;
         }
       }
     }
@@ -65,12 +65,18 @@
 }
 @include media-query(414px) {
   .swipe-container{
+    .user-image-container{
+      height:250px;
+    }
+    .info{
+      margin-top: 200px;
+    }
     .swipe-side{
       .swiper{
         & .panel-container{
           margin: 0;
           .panel{
-            margin: auto;
+            margin: 10px auto 10px auto;
           }
         }
       }
