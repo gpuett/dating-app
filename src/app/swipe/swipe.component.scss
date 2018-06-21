@@ -18,9 +18,12 @@
       &.is-active {
         transform: translateX(-100%);
       }
-      & .panel {
-        min-width: 65vw;
-        margin: 0 15%;
+      & .panel-container {
+        min-width: 100%;
+        .panel {
+          min-width: 65vw;
+          margin: 0 15%;
+        }
       }
     }
   }

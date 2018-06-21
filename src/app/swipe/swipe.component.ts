@@ -12,7 +12,7 @@ import { FilterPipe } from '../filter.pipe';
 })
 export class SwipeComponent implements OnInit {
   users;
-  liked = false;
+  user: User;
 
   constructor(private dataService: DataService) { }
 
@@ -24,6 +24,11 @@ export class SwipeComponent implements OnInit {
     // const pos = (num) => num += num;
     const isActive = (num) => active.setAttribute('style', "transform: translateX(-" + (num += num) + '%)');
     isActive(100);
+  }
+
+  toggle(user) {
+    user.rejected = true;
+    // console.log(user.rejected);
   }
 
   ngOnInit() {

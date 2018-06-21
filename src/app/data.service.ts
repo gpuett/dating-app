@@ -18,9 +18,18 @@ export class DataService {
 
 // get("api/users") read
   getUsers(): Promise<User[]> {
+
     return this.http.get(this.usersUrl)
     .toPromise()
-    .then(response => response.json() as User[])
+    .then((response) => {
+      var newArrayOfUserObjects = [];
+      for (var userJson of response.json()) {
+        var user = userJson as User;
+        user.rejected = false;
+        newArrayOfUserObjects.push(user)
+      }
+      return newArrayOfUserObjects;
+    })
     .catch(this.handleError);
   }
 
